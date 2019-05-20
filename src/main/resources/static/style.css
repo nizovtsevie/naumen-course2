@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Ubuntu-Regular;
+    src: url('./fonts/ubuntu/Ubuntu-Regular.ttf');
+}
+
+@font-face {
+    font-family: Ubuntu-Bold;
+    src: url('./fonts/ubuntu/Ubuntu-Bold.ttf');
+}
+
+.auth-title {
+    font-family: Ubuntu-Bold serif;
+    font-size: 30px;
+    color: #403866;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.auth-control {
+    font-family: Ubuntu-Bold serif;
+    color: #403866;
+    line-height: 1.2;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    background: transparent;
+    height: 62px;
+    padding: 0 20px 0 38px;
+}

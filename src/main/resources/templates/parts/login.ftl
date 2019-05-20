@@ -1,8 +1,8 @@
 <#macro login path>
     <form action="${path}" method="post">
         <div>
-            <label>Имя пользователя:
-                <input type="text" name="username">
+            <label>
+                <input class="form-control" type="text" name="username">
             </label>
         </div>
         <div>
