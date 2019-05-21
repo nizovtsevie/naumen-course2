@@ -1,10 +1,8 @@
 package naumen.twitter.com.repos;
 
 import naumen.twitter.com.domain.UserData;
-import org.springframework.data.repository.CrudRepository;
-
+import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 
-public interface UserDataRepo extends CrudRepository<UserData, Long> {
-    UserData findByUser_Id(Long id);
+public interface UserDataRepo extends JpaRepository<UserData, Long> {
 }

@@ -63,4 +63,10 @@ public class Message {
         this.tag = tag;
     }
 
+    @Override
+    public String toString()
+    {
+        return "Msg: [AuthorId: " + getAuthor().getId() +"| Text: "+getText()+ " | Tag " +getTag() +" | MessageId: "+getId()+"]";
+    }
+
 }

@@ -69,5 +69,11 @@ public class UserData {
     public void setUser(User user) {
         this.user = user;
     }
+
+    @Override
+    public String toString()
+    {
+        return "UserData: [UserId: " + getId() +"| Name: "+getName()+ " | Phone " +getPhoneNumber() +" | RegistrationDate: "+getRegistrationDate().toString()+"]";
+    }
 }
 
