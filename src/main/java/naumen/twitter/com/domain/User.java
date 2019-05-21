@@ -99,5 +99,11 @@ public class User implements UserDetails {
     public UserData getData() { return data; }
 
     public void setData(UserData userdata) { this.data = userdata; }
+
+    @Override
+    public String toString()
+    {
+        return "User: [id: " + getId() +"| Username: "+getUsername()+ " | Roles " +getRoles().toString() +" | Password: "+getPassword()+"]";
+    }
 }
 
