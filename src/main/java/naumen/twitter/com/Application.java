@@ -28,7 +28,7 @@ public class Application {
         SpringApplication.run(Application.class, args);
     }
 
-    @EventListener(ApplicationReadyEvent.class)
+  /*  @EventListener(ApplicationReadyEvent.class)
     private void testJpaMethods() {
         User user = new User();
         user.setActive(false);
@@ -62,5 +62,5 @@ public class Application {
         userService.deleteAll();
         userDataService.deleteAll();
 
-    }
+    }*/
 }
