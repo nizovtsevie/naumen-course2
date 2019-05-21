@@ -1,5 +1,6 @@
 package naumen.twitter.com.service;
 
+import naumen.twitter.com.domain.User;
 import naumen.twitter.com.repos.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

@@ -4,6 +4,9 @@
 <@common.page>
     <div>
         <@login.logout />
+        <span><a href="/user">Список пользователей</a></span>
+        <span><a href="/profile/search">Искать пользователей</a></span>
+        <span><a href="/me">Моя страница</a></span>
     </div>
     <div>
         <form method="post">
