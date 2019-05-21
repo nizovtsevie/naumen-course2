@@ -16,7 +16,7 @@
         </li>
         <li role="presentation" style="float: right;">
             <form method="get" action="/main" style="margin-top: 5px; margin-right: 35px;">
-                <input type="text" name="filter" value="${filter?ifExists}">
+                <input type="text" name="filter" value="${filter?ifExists}" placeholder="Поиск по хэштегам">
                 <button type="submit" class="btn btn-default" style="margin-bottom: 2px;">Найти</button>
             </form>
         </li>
