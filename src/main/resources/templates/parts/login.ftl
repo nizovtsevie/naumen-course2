@@ -1,19 +1,19 @@
 <#macro login path>
-    <form action="${path}" method="post">
-        <div>
-            <label>
-                <input class="form-control" type="text" name="username">
-            </label>
+    <form class="form" action="${path}" method="post">
+        <div class="col-xs-12">
+            <div class="form-group">
+                <input class="form-control" type="text" name="username" placeholder="Введите имя пользователя">
+            </div>
         </div>
-        <div>
-            <label>Пароль:
-                <input type="password" name="password">
-            </label>
+        <div class="col-xs-12">
+            <div class="form-group">
+                <input class="form-control" type="password" name="password" placeholder="Введите пароль">
+            </div>
         </div>
         <input type="hidden" name="_csrf" value="${_csrf.token}">
 
-        <div>
-            <input type="submit" value="Войти">
+        <div class="text-center col-xs-12">
+            <input type="submit" class="btn btn-default" value="Войти">
         </div>
     </form>
 </#macro>
