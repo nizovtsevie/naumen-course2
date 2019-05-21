@@ -20,8 +20,8 @@ public class MainController {
     private MessageRepo messageRepo;
 
     @GetMapping("/")
-    public String login(Map<String, Object> model) {
-        return "redirect:/login";
+    public String greeting(Map<String, Object> model) {
+        return "greeting";
     }
 
     @GetMapping("/main")
