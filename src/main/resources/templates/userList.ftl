@@ -18,7 +18,9 @@
             <td>${user.id}</td>
             <td>${user.username}</td>
             <td><#list user.roles as role>${role}<#sep>, </#list></td>
+            <#if isAdmin>
             <td><a href="/user/${user.id}">edit</a></td>
+            </#if>
         </tr>
     </#list>
         </tbody>
