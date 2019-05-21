@@ -14,7 +14,7 @@ public class Message {
     private String tag;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
     private User author;
 
     public Message() {
@@ -61,6 +61,12 @@ public class Message {
 
     public void setTag(String tag) {
         this.tag = tag;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "Msg: [AuthorId: " + getAuthor().getId() +"| Text: "+getText()+ " | Tag " +getTag() +" | MessageId: "+getId()+"]";
     }
 
 }
