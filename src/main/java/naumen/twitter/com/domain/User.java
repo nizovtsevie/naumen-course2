@@ -16,6 +16,12 @@ public class User implements UserDetails {
     private String password;
     private boolean active;
 
+    @OneToOne(mappedBy = "user")
+    private UserData data;
+
+    @OneToMany(mappedBy = "author")
+    private Set<Message> messages;
+
     @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
     @CollectionTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"))
     @Enumerated(EnumType.STRING)
@@ -85,5 +91,13 @@ public class User implements UserDetails {
     public void setRoles(Set<Role> roles) {
         this.roles = roles;
     }
+
+    public Set<Message> getMessages() { return messages; }
+
+    public void setMessages(Set<Message> messages) { this.messages = messages;}
+
+    public UserData getData() { return data; }
+
+    public void setData(UserData userdata) { this.data = userdata; }
 }
 
