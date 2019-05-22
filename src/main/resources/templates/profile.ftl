@@ -15,6 +15,7 @@
                 </#list>
             </form>
 
+            <!---
             ${message?ifExists}
             <form method="form">
                 <div class="form-group row">
@@ -32,7 +33,7 @@
                 <input type="hidden" name="_csrf" value="${_csrf.token}" />
                 <button class="btn btn-primary" type="submit">Save</button>
             </form>
-
+    -->
 
             <br><br>
             <a href="/main">Вернуться на главную</a>
