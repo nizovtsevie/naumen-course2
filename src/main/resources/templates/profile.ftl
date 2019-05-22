@@ -15,7 +15,8 @@
                 </#list>
             </form>
 
-            <form method="post">
+            ${message?ifExists}
+            <form method="form">
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Password:</label>
                     <div class="col-sm-6">
@@ -31,6 +32,7 @@
                 <input type="hidden" name="_csrf" value="${_csrf.token}" />
                 <button class="btn btn-primary" type="submit">Save</button>
             </form>
+
 
             <br><br>
             <a href="/main">Вернуться на главную</a>
